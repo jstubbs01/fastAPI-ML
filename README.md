@@ -1,2 +1,2 @@
 # fastAPI-ML
-Deploy machine learning and other statistical models to
+Deploy machine learning and other statistical models to online datasets
