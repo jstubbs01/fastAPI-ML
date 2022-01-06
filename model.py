@@ -76,6 +76,14 @@ Y_valid = valid.label
 X_test = test.text
 Y_test = test.label
 
+#Create a pipeline
+clf = Pipeline(steps =[
+('preprocessing', CountVectorizer()),
+('classifier', LogisticRegression(dual=False,max_iter=2000))
+])
+
+
+
 # save the model to disk
 pickle.dump(classifier, open('LRClassifier.pkl', 'wb'))
 # load the model from disk
