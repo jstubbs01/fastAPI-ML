@@ -21,7 +21,7 @@ def get_negative_reviews()"
     # accepts a prediction from the pipeline
     # and prints the number of positive reviews
     negativereviews=loaded_model.predict(X_test)
-    print(f'Number of reviews classified as negative: {list(pnegativereviews).count(1)}')
+    print(f'Number of reviews classified as negative: {list(negativereviews).count(1)}')
 @app.get("/data/{negativereviews}")
 @app.get("/data/{Vscores}")
 def get_Vscores():
